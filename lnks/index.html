@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Link Center</title>
+
+<link rel="icon" type="image/png" href="https://web.aviorxt.aero/3d_aviorxt.png">
+<style>
+@font-face {
+  font-family: 'Nativera';
+  src: url('https://web.aviorxt.aero/fonts/nativera.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nativera', sans-serif;
+  background: linear-gradient(180deg, #050505 0%, #0d0d0d 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+  transition: transform 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Title */
+h1 {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #00bfff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+/* Link Boxes */
+.link-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 200, 255, 0.15);
+  border-radius: 14px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+.link-box:hover {
+  transform: scale(1.03);
+  border-color: #00bfff;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  font-size: 1.05em;
+  letter-spacing: 0.2px;
+}
+
+/* Featured Box */
+.featured {
+  background: linear-gradient(135deg, rgba(0,114,255,0.25), rgba(0,200,255,0.15));
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 18px rgba(0,200,255,0.25);
+}
+
+/* Aviation Career Highlight */
+.aviation-link {
+  background: rgba(0, 90, 255, 0.1);
+  border: 1px solid rgba(0, 120, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 120, 255, 0.25);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.85em;
+  color: #aaa;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: #00bfff;
+  margin: 4px 8px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  .link-box a {
+    font-size: 1em;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 15px;
+  }
+  .link-box {
+    padding: 12px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://web.aviorxt.aero/logo.png" alt="Logo" class="logo">
+    <h1>Link Center</h1>
+
+    <div class="link-box"><a href="https://web.aviorxt.aero/gallery" target="_blank">🏠 Gallery</a></div>
+    <div class="link-box"><a href="https://me.aviorxt.aero" target="_blank">💼 Portfolio</a></div>
+    <div class="link-box featured"><a href="https://aviation.axt.co.in" target="_blank">✈️ Digital Space of Aviation</a></div>
+
+    <div class="link-box"><a href="https://aviation.axt.co.in/how-to-become-a-pilot/part-1" target="_blank">🛫 How to Become a Pilot – Part 1</a></div>
+    <div class="link-box"><a href="https://aviation.axt.co.in/general/airportoperations" target="_blank">🏢 Airport Operations</a></div>
+    <div class="link-box"><a href="https://aviation.axt.co.in/ame-career-guide/vol-1-2025" target="_blank">🔧 AME Career Guide Vol 1 – 2025</a></div>
+    <div class="link-box"><a href="https://aviation.axt.co.in/general/future-of-aviation" target="_blank">🌍 Future of Aviation</a></div>
+
+    <div class="link-box aviation-link"><a href="https://www.goindigo.in/careers.html" target="_blank">🟦 IndiGo Careers</a></div>
+
+    <footer>
+      <div>
+        <a href="https://web.aviorxt.aero/lnks/privacy.html" target="_blank">Privacy Policy</a> | 
+        <a href="https://web.aviorxt.aero/lnks/terms.html" target="_blank">Terms & Conditions</a>
+      </div>
+      <div>© 2025 web.aviorxt.aero — All Rights Reserved</div>
+    </footer>
+    </div>
+</body>
+</html>
